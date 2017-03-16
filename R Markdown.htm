@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<!-- saved from url=(0029)http://rmarkdown.rstudio.com/ -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+
+<meta name="generator" content="pandoc">
+
+
+
+
+<title>R Markdown</title>
+
+<script src="./R Markdown_files/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="./R Markdown_files/cosmo.min.css" rel="stylesheet">
+<script src="./R Markdown_files/bootstrap.min.js"></script>
+<script src="./R Markdown_files/html5shiv.min.js"></script>
+<script src="./R Markdown_files/respond.min.js"></script>
+<script src="./R Markdown_files/tabsets.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway" rel="stylesheet">
+<!-- <link href="./R Markdown_files/textmate.css" rel="stylesheet"> -->
+<script src="./R Markdown_files/highlight.js"></script>
+
+<meta name="description" content="Turn your analyses into high quality documents, reports, presentations and dashboards with R Markdown. Use a productive notebook interface to weave together narrative text and code to produce elegantly formatted output. Use multiple languages including R, Python, and SQL. R Markdown supports a reproducible workflow for dozens of static and dynamic output formats including HTML, PDF, MS Word, Beamer, HTML5 slides, Tufte-style handouts, books, dashboards, shiny applications, scientific articles, websites, and more.">
+
+<link rel="icon" type="image/png" href="http://rmarkdown.rstudio.com/images/favicon.png">
+
+<script type="text/javascript" src="./R Markdown_files/rmarkdown.js"></script>
+
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs && document.readyState && document.readyState === "complete") {
+   window.setTimeout(function() {
+      hljs.initHighlighting();
+   }, 0);
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+<link rel="stylesheet" href="./R Markdown_files/rmarkdown.css" type="text/css">
+
+<style id="style-1-cropbar-clipper">/* Copyright 2014 Evernote Corporation. All rights reserved. */
+.en-markup-crop-options {
+    top: 18px !important;
+    left: 50% !important;
+    margin-left: -100px !important;
+    width: 200px !important;
+    border: 2px rgba(255,255,255,.38) solid !important;
+    border-radius: 4px !important;
+}
+
+.en-markup-crop-options div div:first-of-type {
+    margin-left: 0px !important;
+}
+</style></head>
+
+<body cz-shortcut-listen="true">
+
+<style type="text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+
+
+<div class="footerPushDown">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+
+
+<div id="rStudioHeader" class="">
+  <div class="innards bandContent">
+    <div>
+      <div class="rStudio"><span class="light"></span>
+        <div class="logo"></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<style type="text/css">
+#TOC {
+  margin-left: 35px;
+  margin-top: 90px;
+}
+</style>
+
+<script type="text/javascript">
+$(".main-container").removeClass("main-container").removeClass("container-fluid").addClass("footerPushDown");
+</script>
+
+
+<div id="pageContent" class="">
+  <div class="articleBandContent">
+
+<style type="text/css">
+.title {
+  display: none;
+}
+#disqus_thread {
+  display: none;
+}
+</style>
+
+<!-- <div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">R Markdown</h1>
+
+</div> -->
+
+
+<script type="text/javascript">
+$("#rStudioHeader").removeClass("alwaysShrunk");
+$("#pageContent").removeClass("standardPadding");
+</script>
+
+
+<div id="homeContent">
+  <div class="band full blue first">
+    <div class="bandContent vCenter">
+      <img class="quote-1" src="https://storage.googleapis.com/caura-west/static/Left_quotes.svg">
+      <div class="blurb">
+        <h1>Analytics for every kind of business</h1>
+        <div>Engage a chatbot about your data problems, but get them solved by people - not tool</div>
+      </div>
+      <img class="quote-2" src="https://storage.googleapis.com/caura-west/static/Right_quotes.svg">
+    </div>
+    <!-- <img class="imageOne" src="./R Markdown_files/bandOne.png"> -->
+    <button class="chat-button" ></button>
+  </div>
+
+  <div class="band full gray1 second leftText middle-content">
+    <div class="bandContent vCenter">
+      <div class="blurb-chat">
+        <div class="chat">
+        <p class="orange-text">Chat:</p>
+        <p class="standard-text">abhighosh18 [1:01 PM] Checked console
+                    <br>for any 404s?
+                    <br>Or console for errors?
+                    <br>Using a CDN?</p>
+        </div>
+      </div>
+    </div>
+    <img class="imageTwo" src="https://storage.googleapis.com/caura-west/static/blackbox_big.png">
+    <img class="imageThree" src="https://storage.googleapis.com/caura-west/static/man.png">
+  </div>
+  <div class="end-text">
+            <p class="end-text--paragraph">Real data problems require Real People. We put real people where it matters: solving your problems.</p>
+        </div>
+</div>
+
+
+
+  </div> <!-- articleBandContent -->
+</div> <!-- pageContent -->
+
+<div id="rStudioFooter" class="band full">
+<div class="bandContent">
+  <div id="copyright">© Copyright 2017 Caura</div>
+</div>
+</div>
+
+
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+
+
+</body></html>
