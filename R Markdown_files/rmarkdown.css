@@ -987,7 +987,9 @@ table.table td a:only-child:active {
 }
 
 @media screen and (max-width: 376px){
-
+  p{
+    line-height: 1.2em;
+  }
     #rStudioHeader .productName {
       font-size: 26px;
     }
