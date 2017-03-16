@@ -941,7 +941,12 @@ table.table td a:only-child:active {
   }
 
 }
-
+@media screen and (max-width: 650px){
+  p {
+    line-height: 1.2em;
+    margin-bottom: 2em;
+  }
+}
 @media screen and (max-width: 500px){
   .gallerySection .galleryItems .galleryItem {
     width: 100%;
