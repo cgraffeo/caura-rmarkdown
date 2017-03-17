@@ -871,11 +871,14 @@ table.table td a:only-child:active {
     font-size: 14px;
   }
   .blurb-chat{
+    /*background-image: url(https://storage.googleapis.com/caura-west/static/blackbox_big.png);*/
     /*position: absolute;*/
     margin: 0 auto;
     /*margin-top: 50px;*/
     font-size: 30px;
     text-align: center;
+    /*background-repeat: no-repeat;*/
+    /*background-size: 100%;*/
   }
   .band .imageOne {
     position: relative;
@@ -890,9 +893,11 @@ table.table td a:only-child:active {
     top: 0;
     right: 0;
     width: 100%;
-    /*margin-top: -214px;*/
     margin-top: -475px;
   }
+/*  .band .imageTwo{
+    display: none;
+  }*/
 
   .band .imageThree {
     display: none;
@@ -941,10 +946,21 @@ table.table td a:only-child:active {
   }
 
 }
-@media screen and (max-width: 650px){
+@media screen and (max-width: 700px){
   p {
     line-height: 1.2em;
     margin-bottom: 2em;
+  }
+}
+@media screen and (max-width: 600px){
+  p {
+    line-height: 1.2em;
+    margin-bottom: 1em;
+    font-size: 21px;
+  }
+  .chat{
+    margin-bottom: 4em;
+    /*font-size: 30px;*/
   }
 }
 @media screen and (max-width: 500px){
@@ -964,7 +980,7 @@ table.table td a:only-child:active {
   }
   .blurb-chat{
     font-size: 18px;
-    margin-bottom: 105px;
+    margin-bottom: 50px;
   }
   .vCenter{
     padding-top: 52px;
@@ -991,14 +1007,16 @@ table.table td a:only-child:active {
   }
 }
 
-@media screen and (max-width: 376px){
+@media screen and (max-width: 400px){
   p{
     line-height: 1.2em;
   }
     #rStudioHeader .productName {
       font-size: 26px;
     }
-
+    .band .imageTwo{
+      height: 216px;
+    }
     #rStudioFooter .bandContent .footerLogo {
       margin: 0 2px;
     }
