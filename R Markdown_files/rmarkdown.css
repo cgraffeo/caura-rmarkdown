@@ -498,10 +498,6 @@ background-image: url('https://storage.googleapis.com/caura-west/static/middle_p
   padding: 0 5%;
 }
 
-#homeContent .band.gray1 {
-  background-color: #f8f8f8;
-}
-
 #homeContent .band.blue {
   background-color: #fff;
   color: #000;
@@ -951,6 +947,9 @@ table.table td a:only-child:active {
     line-height: 1.2em;
     margin-bottom: 2em;
   }
+  .standard-text{
+    padding: 3px;
+  }
 }
 @media screen and (max-width: 600px){
   p {
@@ -1004,6 +1003,9 @@ table.table td a:only-child:active {
   }
   #homeContent .band.blue{
     margin-top: 100px;
+  }
+  .standard-text{
+    padding: 0.1px;
   }
 }
 
